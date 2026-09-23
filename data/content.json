@@ -1,0 +1,827 @@
+{
+  "meta": {
+    "title": "George Hillman - Singer, Songwriter, Multi-Instrumentalist - Christian Music",
+    "description": "George Hillman is a Christian singer, songwriter, and multi-instrumentalist specializing in worship, CCM, and gospel music. Listen to albums, EPs, and singles including In God We Trust, Walls of Freedom, and more.",
+    "keywords": "George Hillman, Christian music, worship music, CCM, contemporary Christian music, gospel music, singer songwriter, multi-instrumentalist, Christian artist, worship artist, In God We Trust, Walls of Freedom, Just Believe",
+    "author": "George Hillman",
+    "siteUrl": "https://georgehillman.com"
+  },
+  "nav": [
+    {
+      "id": "home",
+      "href": "#home",
+      "icon": "fa-home",
+      "label": "Home",
+      "active": true
+    },
+    {
+      "id": "discography",
+      "href": "#discography",
+      "icon": "fa-headphones",
+      "label": "Listen",
+      "active": false
+    },
+    {
+      "id": "contact",
+      "href": "#contact",
+      "icon": "fa-comment",
+      "label": "Contact",
+      "active": false
+    }
+  ],
+  "home": {
+    "name": "George Hillman",
+    "taglineLine1": "Christian Singer, Songwriter,",
+    "taglineLine2": "Multi-Instrumentalist",
+    "producerNote": "(Worship, CCM, Gospel music producer and engineer also...)",
+    "producerUrl": "https://uniquitousmusic.com",
+    "portrait": {
+      "src": "images/George Hillman.jpg",
+      "alt": "George Hillman - Christian singer, songwriter, and multi-instrumentalist"
+    },
+    "jumplink": {
+      "href": "#discography",
+      "label": "See my #discography"
+    },
+    "links": [
+      {
+        "id": "bandcamp",
+        "type": "image",
+        "href": "https://georgehillman.bandcamp.com",
+        "src": "images/bandcamplogo.png",
+        "alt": "Listen to George Hillman's music on Bandcamp"
+      },
+      {
+        "id": "spotify",
+        "type": "icon",
+        "href": "https://open.spotify.com/artist/5PeONVyIuRrtt3TEwESCF4",
+        "icon": "fa-spotify",
+        "label": "Spotify",
+        "active": false
+      },
+      {
+        "id": "youtube",
+        "type": "icon",
+        "href": "https://www.youtube.com/@UniquitousMusicVideo",
+        "icon": "fa-youtube",
+        "label": "",
+        "active": false
+      },
+      {
+        "id": "pipe",
+        "type": "text",
+        "text": "|"
+      },
+      {
+        "id": "facebook",
+        "type": "icon",
+        "href": "http://facebook.com/georgehillmanmusic",
+        "icon": "fa-facebook",
+        "label": "",
+        "active": false
+      },
+      {
+        "id": "instagram",
+        "type": "icon",
+        "href": "http://instagram.com/georgehillman",
+        "icon": "fa-instagram",
+        "label": "",
+        "active": false
+      },
+      {
+        "id": "twitter",
+        "type": "icon",
+        "href": "http://twitter.com/geohillmanmusic",
+        "icon": "fa-twitter",
+        "label": "",
+        "active": true
+      }
+    ]
+  },
+  "discography": {
+    "title": "Discography",
+    "intro": "Releases by George Hillman",
+    "songsLinkLabel": "Browse Individual Songs →",
+    "albumsHeading": "Albums & EP's",
+    "singlesHeading": "Singles"
+  },
+  "contact": {
+    "title": "Contact George",
+    "links": [
+      {
+        "id": "email",
+        "href": "https://uniquitousmusic.com/#contact",
+        "icon": "fa-envelope",
+        "label": "",
+        "active": true
+      },
+      {
+        "id": "facebook",
+        "href": "http://facebook.com/georgehillmanmusic",
+        "icon": "fa-facebook",
+        "label": "",
+        "active": false
+      },
+      {
+        "id": "instagram",
+        "href": "http://instagram.com/georgehillman",
+        "icon": "fa-instagram",
+        "label": "",
+        "active": false
+      },
+      {
+        "id": "twitter",
+        "href": "http://twitter.com/geohillmanmusic",
+        "icon": "fa-twitter",
+        "label": "",
+        "active": true
+      }
+    ]
+  },
+  "songsPanel": {
+    "title": "Individual Songs",
+    "intro": "Christian CCM, Worship and Gospel songs by George Hillman",
+    "discographyLinkLabel": "Browse Discography →"
+  },
+  "albums": [
+    {
+      "id": "just-believe",
+      "type": "ep",
+      "title": "Just Believe",
+      "caption": "Preview/pre-order",
+      "image": "images/JustBelieve_EP.jpg",
+      "alt": "Just Believe EP by George Hillman - Christian music EP",
+      "platforms": [
+        {
+          "label": "YouTube",
+          "href": ""
+        },
+        {
+          "label": "Bandcamp",
+          "href": "https://georgehillman.bandcamp.com/album/just-believe"
+        },
+        {
+          "label": "Spotify",
+          "href": ""
+        }
+      ],
+      "trackIds": [],
+      "hidden": true
+    },
+    {
+      "id": "in-god-we-trust",
+      "type": "ep",
+      "title": "In God We Trust EP",
+      "caption": "2023 Release",
+      "image": "images/InGodWeTrust_EP.jpg",
+      "alt": "In God We Trust EP by George Hillman - 2023 Christian CCM music release",
+      "platforms": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/playlist?list=OLAK5uy_kqqxkrkSRevjmp5apc_8dRwkvQ5FRRPp4"
+        },
+        {
+          "label": "Bandcamp",
+          "href": "https://georgehillman.bandcamp.com/album/in-god-we-trust-ep-2"
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/album/5PE22CzcSPBX8BiMQSVnO0"
+        }
+      ],
+      "trackIds": [
+        "god-said",
+        "in-god-we-trust",
+        "lately",
+        "living-ain-t-life",
+        "all-i-need-is-you"
+      ],
+      "hidden": false
+    },
+    {
+      "id": "walls-of-freedom",
+      "type": "album",
+      "title": "Walls of Freedom",
+      "caption": "(1994) 2015 Re-release",
+      "image": "images/WallsofFreedom_Album.jpg",
+      "alt": "Walls of Freedom album by George Hillman - Classic Christian CCM music album from 1994, re-released 2015",
+      "platforms": [
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+        },
+        {
+          "label": "Bandcamp",
+          "href": "https://georgehillman.bandcamp.com/album/walls-of-freedom"
+        },
+        {
+          "label": "Spotify",
+          "href": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw"
+        }
+      ],
+      "trackIds": [
+        "proverb-1-20-intro",
+        "every-drop-of-blood",
+        "heaven",
+        "the-word",
+        "all-i-want-to-do",
+        "over-and-over",
+        "rather-be",
+        "you-can-do-it",
+        "psalm-51",
+        "hold-on",
+        "calling-loud",
+        "the-gap-feat-ernie-ern-dog-armoogam",
+        "walls-of-freedom-outro"
+      ],
+      "hidden": false
+    }
+  ],
+  "songs": [
+    {
+      "id": "sing-to-the-lord",
+      "title": "Sing to the Lord",
+      "duration": "3:45",
+      "releaseDate": "2014",
+      "albumArt": "images/SingToTheLord_George_Hillman.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/sing-to-the-lord",
+        "spotify": "https://open.spotify.com/track/1ZxSTpZXn9dB8PTC4gDYjy",
+        "youtube": "https://www.youtube.com/watch?v=zcPKFAPRI2Q"
+      },
+      "assignment": {
+        "type": "single"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "2014 Release",
+      "singleAlt": "Sing to the Lord single by George Hillman - 2014 Christian worship song",
+      "hidden": false
+    },
+    {
+      "id": "proverb-1-20-intro",
+      "title": "Proverb 1:20 (Intro)",
+      "duration": "2:03",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/proverb-1-20-intro",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "every-drop-of-blood",
+      "title": "Every Drop Of Blood",
+      "duration": "3:40",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/every-drop-of-blood",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "heaven",
+      "title": "Heaven",
+      "duration": "4:10",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/heaven",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "the-word",
+      "title": "The Word",
+      "duration": "4:17",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/the-word",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "all-i-want-to-do",
+      "title": "All I Want To Do",
+      "duration": "4:45",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/all-i-want-to-do",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "over-and-over",
+      "title": "Over and Over",
+      "duration": "3:27",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/over-and-over",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "rather-be",
+      "title": "Rather Be",
+      "duration": "4:00",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/rather-be",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "you-can-do-it",
+      "title": "You Can Do It",
+      "duration": "3:50",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/you-can-do-it",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "psalm-51",
+      "title": "Psalm 51",
+      "duration": "5:57",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/psalm-51",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "hold-on",
+      "title": "Hold On",
+      "duration": "4:41",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/hold-on",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "calling-loud",
+      "title": "Calling Loud",
+      "duration": "3:43",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/calling-loud",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "the-gap-feat-ernie-ern-dog-armoogam",
+      "title": "The Gap (feat. Ernie Ern-Dog Armoogam)",
+      "duration": "4:01",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/the-gap-feat-ernie-ern-dog-armoogam",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "walls-of-freedom-outro",
+      "title": "Walls of Freedom (outro)",
+      "duration": "0:54",
+      "releaseDate": "2015",
+      "albumArt": "images/WallsofFreedom_Album.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/walls-of-freedom-outro",
+        "spotify": "https://open.spotify.com/album/0ync6xQVxYZHRZrnBMH3vw",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nv8Po1FIN3S8fbMy8rbwmuCoGs8h_of0k"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "walls-of-freedom"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "peter-s-song",
+      "title": "Peter's Song",
+      "duration": "4:12",
+      "releaseDate": "2015",
+      "albumArt": "images/Peters_Song_George_Hillman.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/peters-song",
+        "spotify": "",
+        "youtube": "https://www.youtube.com/watch?v=0yWknOHqXhA"
+      },
+      "assignment": {
+        "type": "single"
+      },
+      "singleLabel": "Single (Demo)",
+      "singleCaption": "2015 Unreleased Demo",
+      "singleAlt": "Peter's Song by George Hillman - 2015 unreleased demo of Christian worship music",
+      "hidden": false
+    },
+    {
+      "id": "greatest-of-these",
+      "title": "Greatest of These",
+      "duration": "3:58",
+      "releaseDate": "2016",
+      "albumArt": "images/GreatestOfThese_George_Hillman.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/greatest-of-these",
+        "spotify": "https://open.spotify.com/album/4RzDR4IGvV1DNQMk0BdPDp",
+        "youtube": "https://www.youtube.com/watch?v=LfuSVQgNffE"
+      },
+      "assignment": {
+        "type": "single"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "2016 Release",
+      "singleAlt": "Greatest of These single by George Hillman - 2016 Christian worship release",
+      "hidden": false
+    },
+    {
+      "id": "god-said",
+      "title": "God Said",
+      "duration": "3:45",
+      "releaseDate": "2023",
+      "albumArt": "images/InGodWeTrust_EP.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/god-said-2",
+        "spotify": "https://open.spotify.com/album/5PE22CzcSPBX8BiMQSVnO0",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kqqxkrkSRevjmp5apc_8dRwkvQ5FRRPp4"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "in-god-we-trust"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "in-god-we-trust",
+      "title": "In God We Trust",
+      "duration": "4:23",
+      "releaseDate": "2023",
+      "albumArt": "images/InGodWeTrust_EP.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/in-god-we-trust",
+        "spotify": "https://open.spotify.com/album/5PE22CzcSPBX8BiMQSVnO0",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kqqxkrkSRevjmp5apc_8dRwkvQ5FRRPp4"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "in-god-we-trust"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "lately",
+      "title": "Lately",
+      "duration": "4:16",
+      "releaseDate": "2023",
+      "albumArt": "images/InGodWeTrust_EP.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/lately-2",
+        "spotify": "https://open.spotify.com/album/5PE22CzcSPBX8BiMQSVnO0",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kqqxkrkSRevjmp5apc_8dRwkvQ5FRRPp4"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "in-god-we-trust"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "living-ain-t-life",
+      "title": "Living Ain't Life",
+      "duration": "4:03",
+      "releaseDate": "2023",
+      "albumArt": "images/InGodWeTrust_EP.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/living-aint-life-2",
+        "spotify": "https://open.spotify.com/album/5PE22CzcSPBX8BiMQSVnO0",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kqqxkrkSRevjmp5apc_8dRwkvQ5FRRPp4"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "in-god-we-trust"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    },
+    {
+      "id": "all-i-need-is-you",
+      "title": "All I Need Is You",
+      "duration": "5:37",
+      "releaseDate": "2023",
+      "albumArt": "images/InGodWeTrust_EP.jpg",
+      "links": {
+        "bandcamp": "https://georgehillman.bandcamp.com/track/all-i-need-is-you-2",
+        "spotify": "https://open.spotify.com/album/5PE22CzcSPBX8BiMQSVnO0",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kqqxkrkSRevjmp5apc_8dRwkvQ5FRRPp4"
+      },
+      "assignment": {
+        "type": "album",
+        "albumId": "in-god-we-trust"
+      },
+      "singleLabel": "Single",
+      "singleCaption": "",
+      "singleAlt": "",
+      "hidden": false
+    }
+  ],
+  "singlesOrder": [
+    "sing-to-the-lord",
+    "greatest-of-these",
+    "peter-s-song"
+  ],
+  "footer": {
+    "credit": "George Hillman, Uniquitous Music LLC"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "George Hillman",
+    "genre": [
+      "Christian Music",
+      "CCM",
+      "Contemporary Christian Music",
+      "Worship Music",
+      "Gospel"
+    ],
+    "description": "Christian singer, songwriter, and multi-instrumentalist specializing in worship, CCM, and gospel music",
+    "url": "https://georgehillman.com",
+    "sameAs": [
+      "https://georgehillman.bandcamp.com",
+      "https://open.spotify.com/artist/5PeONVyIuRrtt3TEwESCF4",
+      "https://www.youtube.com/@UniquitousMusicVideo",
+      "https://facebook.com/georgehillmanmusic",
+      "https://instagram.com/georgehillman",
+      "https://twitter.com/geohillmanmusic"
+    ],
+    "album": [
+      {
+        "@type": "MusicAlbum",
+        "name": "In God We Trust EP",
+        "datePublished": "2023-11-24",
+        "numTracks": 5,
+        "image": "https://georgehillman.com/images/InGodWeTrust_EP.jpg",
+        "albumProductionType": "http://schema.org/StudioAlbum",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "George Hillman"
+        },
+        "track": [
+          {
+            "@type": "MusicRecording",
+            "name": "God Said",
+            "duration": "PT3M45S",
+            "url": "https://georgehillman.bandcamp.com/track/god-said-2"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "In God We Trust",
+            "duration": "PT4M23S",
+            "url": "https://georgehillman.bandcamp.com/track/in-god-we-trust"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Lately",
+            "duration": "PT4M16S",
+            "url": "https://georgehillman.bandcamp.com/track/lately-2"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Living Ain't Life",
+            "duration": "PT4M3S",
+            "url": "https://georgehillman.bandcamp.com/track/living-aint-life-2"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "All I Need Is You",
+            "duration": "PT5M37S",
+            "url": "https://georgehillman.bandcamp.com/track/all-i-need-is-you-2"
+          }
+        ]
+      },
+      {
+        "@type": "MusicAlbum",
+        "name": "Walls of Freedom",
+        "datePublished": "2015-06-16",
+        "numTracks": 13,
+        "image": "https://georgehillman.com/images/WallsofFreedom_Album.jpg",
+        "albumProductionType": "http://schema.org/StudioAlbum",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "George Hillman"
+        },
+        "track": [
+          {
+            "@type": "MusicRecording",
+            "name": "Proverb 1:20 (Intro)",
+            "duration": "PT2M3S",
+            "url": "https://georgehillman.bandcamp.com/track/proverb-1-20-intro"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Every Drop Of Blood",
+            "duration": "PT3M40S",
+            "url": "https://georgehillman.bandcamp.com/track/every-drop-of-blood"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Heaven",
+            "duration": "PT4M10S",
+            "url": "https://georgehillman.bandcamp.com/track/heaven"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "The Word",
+            "duration": "PT4M17S",
+            "url": "https://georgehillman.bandcamp.com/track/the-word"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "All I Want To Do",
+            "duration": "PT4M45S",
+            "url": "https://georgehillman.bandcamp.com/track/all-i-want-to-do"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Over and Over",
+            "duration": "PT3M27S",
+            "url": "https://georgehillman.bandcamp.com/track/over-and-over"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Rather Be",
+            "duration": "PT4M0S",
+            "url": "https://georgehillman.bandcamp.com/track/rather-be"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "You Can Do It",
+            "duration": "PT3M50S",
+            "url": "https://georgehillman.bandcamp.com/track/you-can-do-it"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Psalm 51",
+            "duration": "PT5M57S",
+            "url": "https://georgehillman.bandcamp.com/track/psalm-51"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Hold On",
+            "duration": "PT4M41S",
+            "url": "https://georgehillman.bandcamp.com/track/hold-on"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Calling Loud",
+            "duration": "PT3M43S",
+            "url": "https://georgehillman.bandcamp.com/track/calling-loud"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "The Gap",
+            "duration": "PT4M1S",
+            "url": "https://georgehillman.bandcamp.com/track/the-gap-feat-ernie-ern-dog-armoogam"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Walls of Freedom (outro)",
+            "duration": "PT0M54S",
+            "url": "https://georgehillman.bandcamp.com/track/walls-of-freedom-outro"
+          }
+        ]
+      }
+    ]
+  }
+}
