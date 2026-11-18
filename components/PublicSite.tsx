@@ -1,6 +1,7 @@
 import { Fragment, type CSSProperties } from "react";
 import Script from "next/script";
 import { orderedSingles, singlePlatforms, songsByYear, tableAlbumLabel } from "@/lib/catalog";
+import { jsonLdScript, safeHref } from "@/lib/safe-url";
 import type { HomeLink, PlatformLink, SiteContent, Song } from "@/lib/types";
 
 const SONGS_CSS = `
@@ -66,19 +67,26 @@ function HomeLinks({ links }: { links: HomeLink[] }) {
       );
     }
     if (link.type === "image") {
+      const href = safeHref(link.href);
+      const image = <img src={link.src} alt={link.alt} />;
+      if (!href) return <span key={link.id}>{image}</span>;
       return (
-        <a key={link.id} href={link.href} target="_blank">
-          <img src={link.src} alt={link.alt} />
+        <a key={link.id} href={href} target="_blank" rel="noopener noreferrer">
+          {image}
         </a>
       );
     }
+    const href = safeHref(link.href);
+    const className = `icon ${link.icon}${link.active ? " active" : ""}`;
+    if (!href) {
+      return (
+        <span key={link.id} className={className}>
+          {link.label}
+        </span>
+      );
+    }
     return (
-      <a
-        key={link.id}
-        href={link.href}
-        target="_blank"
-        className={`icon ${link.icon}${link.active ? " active" : ""}`}
-      >
+      <a key={link.id} href={href} target="_blank" rel="noopener noreferrer" className={className}>
         {link.label}
       </a>
     );
@@ -86,31 +94,34 @@ function HomeLinks({ links }: { links: HomeLink[] }) {
 }
 
 function Platforms({ platforms }: { platforms: PlatformLink[] }) {
-  return platforms.map((platform, index) => (
-    <span key={`${platform.label}-${index}`}>
-      {index > 0 ? " | " : null}
-      {platform.href ? (
-        <a href={platform.href} target="_blank">
-          {platform.label}
-        </a>
-      ) : (
-        platform.label
-      )}
-    </span>
-  ));
+  return platforms.map((platform, index) => {
+    const href = safeHref(platform.href);
+    return (
+      <span key={`${platform.label}-${index}`}>
+        {index > 0 ? " | " : null}
+        {href ? (
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            {platform.label}
+          </a>
+        ) : (
+          platform.label
+        )}
+      </span>
+    );
+  });
 }
 
 function ListenLinks({ song }: { song: Song }) {
   const parts = [
-    song.links.bandcamp ? { label: "Bandcamp", href: song.links.bandcamp } : null,
-    song.links.spotify ? { label: "Spotify", href: song.links.spotify } : null,
-    song.links.youtube ? { label: "YouTube", href: song.links.youtube } : null,
-  ].filter((part): part is { label: string; href: string } => part !== null);
+    { label: "Bandcamp", href: safeHref(song.links.bandcamp) },
+    { label: "Spotify", href: safeHref(song.links.spotify) },
+    { label: "YouTube", href: safeHref(song.links.youtube) },
+  ].filter((part) => part.href);
 
   return parts.map((part, index) => (
     <span key={part.label}>
       {index > 0 ? <br /> : null}
-      <a href={part.href} target="_blank" style={{ color: "#1a2332", textDecoration: "none" }}>
+      <a href={part.href} target="_blank" rel="noopener noreferrer" style={{ color: "#1a2332", textDecoration: "none" }}>
         {part.label}
       </a>
     </span>
@@ -164,14 +175,14 @@ export function PublicSite({ content }: { content: SiteContent }) {
         <link rel="stylesheet" href="/css/skel.css" />
         <link rel="stylesheet" href="/css/style-noscript.css" />
       </noscript>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(content.jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(content.jsonLd) }} />
 
       <div id="wrapper">
         <nav id="nav">
           {content.nav.map((item) => (
             <a
               key={item.id}
-              href={item.href}
+              href={safeHref(item.href)}
               className={`icon ${item.icon}${item.active ? " active" : ""}`}
             >
               <span>{item.label}</span>
@@ -191,8 +202,9 @@ export function PublicSite({ content }: { content: SiteContent }) {
                 <br />
                 <span style={{ display: "inline-block", textAlign: "right", width: "100%" }}>
                   <a
-                    href={content.home.producerUrl}
+                    href={safeHref(content.home.producerUrl)}
                     target="_blank"
+                    rel="noopener noreferrer"
                     style={{ textDecoration: "none", fontSize: "16px", fontStyle: "italic" }}
                   >
                     {content.home.producerNote}
@@ -211,7 +223,7 @@ export function PublicSite({ content }: { content: SiteContent }) {
                 <HomeLinks links={content.home.links} />
               </p>
             </header>
-            <a href={content.home.jumplink.href} className="jumplink pic">
+            <a href={safeHref(content.home.jumplink.href)} className="jumplink pic">
               <span className="arrow icon fa-chevron-right">
                 <span>{content.home.jumplink.label}</span>
               </span>
@@ -267,8 +279,9 @@ export function PublicSite({ content }: { content: SiteContent }) {
                   <Fragment key={link.id}>
                     {index > 0 ? "\u00A0\u00A0" : null}
                     <a
-                      href={link.href}
+                      href={safeHref(link.href)}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className={`icon ${link.icon}${link.active ? " active" : ""}`}
                     >
                       {link.label}

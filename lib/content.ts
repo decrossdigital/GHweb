@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { connection } from "next/server";
 import { reconcile } from "./catalog";
+import { safeHref } from "./safe-url";
 import type {
   Album,
   Assignment,
@@ -57,7 +58,7 @@ function parsePlatforms(value: unknown, label: string) {
     if (!isRecord(item)) throw new Error(`${label} ${index + 1} is invalid`);
     return {
       label: str(item.label, `${label} ${index + 1} label`),
-      href: str(item.href, `${label} ${index + 1} link`),
+      href: safeHref(str(item.href, `${label} ${index + 1} link`)),
     };
   });
 }
@@ -84,9 +85,9 @@ function parseSong(value: unknown, index: number): Song {
     releaseDate: str(value.releaseDate, `${label} year`),
     albumArt: str(value.albumArt, `${label} artwork`),
     links: {
-      bandcamp: str(value.links.bandcamp, `${label} Bandcamp link`),
-      spotify: str(value.links.spotify, `${label} Spotify link`),
-      youtube: str(value.links.youtube, `${label} YouTube link`),
+      bandcamp: safeHref(str(value.links.bandcamp, `${label} Bandcamp link`)),
+      spotify: safeHref(str(value.links.spotify, `${label} Spotify link`)),
+      youtube: safeHref(str(value.links.youtube, `${label} YouTube link`)),
     },
     assignment: parseAssignment(value.assignment, label),
     singleLabel: str(value.singleLabel, `${label} single label`),
@@ -122,7 +123,7 @@ function parseIconLink(value: unknown, label: string): IconLink {
   if (!isRecord(value)) throw new Error(`${label} is invalid`);
   return {
     id: str(value.id, `${label} id`),
-    href: str(value.href, `${label} link`),
+    href: safeHref(str(value.href, `${label} link`)),
     icon: str(value.icon, `${label} icon`),
     label: str(value.label, `${label} label`),
     active: bool(value.active, `${label} active`),
@@ -145,7 +146,7 @@ function parseHomeLink(value: unknown, index: number): HomeLink {
     return {
       id,
       type,
-      href: str(value.href, `${label} link`),
+      href: safeHref(str(value.href, `${label} link`)),
       src: str(value.src, `${label} image`),
       alt: str(value.alt, `${label} alt text`),
     };
@@ -154,7 +155,7 @@ function parseHomeLink(value: unknown, index: number): HomeLink {
     return {
       id,
       type,
-      href: str(value.href, `${label} link`),
+      href: safeHref(str(value.href, `${label} link`)),
       icon: str(value.icon, `${label} icon`),
       label: str(value.label, `${label} label`),
       active: bool(value.active, `${label} active`),
@@ -198,13 +199,13 @@ export function parseContent(input: unknown): SiteContent {
       taglineLine1: str(home.taglineLine1, "Tagline line 1"),
       taglineLine2: str(home.taglineLine2, "Tagline line 2"),
       producerNote: str(home.producerNote, "Producer note"),
-      producerUrl: str(home.producerUrl, "Producer link"),
+      producerUrl: safeHref(str(home.producerUrl, "Producer link")),
       portrait: {
         src: str(home.portrait.src, "Portrait image"),
         alt: str(home.portrait.alt, "Portrait alt text"),
       },
       jumplink: {
-        href: str(home.jumplink.href, "Portrait link"),
+        href: safeHref(str(home.jumplink.href, "Portrait link")),
         label: str(home.jumplink.label, "Portrait link label"),
       },
       links: arr(home.links, "Home links").map(parseHomeLink),
